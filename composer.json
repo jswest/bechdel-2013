@@ -1,0 +1,6 @@
+{
+	"require": {
+		"maciek-kemnitz/phpquery": "dev-master",
+		"rmccue/requests": ">=1.0"
+	}
+}

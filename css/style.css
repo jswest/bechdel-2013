@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0; }
+
+html,
+body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%; }
+
+#sections {
+	position: relative;
+	overflow-y: scroll;
+	width: 100%;
+	height: 100%; }
+
+h1#title {
+	font-family: "Source Sans Pro";
+	font-size: 30px;
+	font-weight: 800;
+	letter-spacing: 1.5px;
+	text-align: center;
+	text-transform: uppercase; }
+
+h1.section-title {
+	color: rgb(255,255,255);
+	font-family: "Source Sans Pro";
+	font-size: 30px;
+	font-weight: 800;
+	letter-spacing: 1.5px;
+	margin-left: 20px;
+	padding-top: 20px;
+	text-align: left;
+	text-transform: uppercase;
+	width: 700px;
+}
+h2.section-description {
+	color: rgb(255,255,255);
+	font-family: "Source Sans Pro";
+	font-size: 20px;
+	font-weight: 100;
+	letter-spacing: 1.5px;
+	margin-left: 20px;
+	text-align: left;
+	text-transform: uppercase;
+	width: 700px; }
+
+.section {
+	position: relative;
+}
+
+#section-0 { background-color: rgb(100,200,100); }
+.definition {
+	color: rgb(255,255,255);
+	margin: 0 auto;
+	padding: 200px 0 0 0;
+	width: 650px;
+	height: 100%; }
+.definition h1 {
+	font-family: "Source Sans Pro";
+	font-size: 60px;
+	font-weight: 800;
+	letter-spacing: 3px;
+	line-height: 60px;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase; }
+.definition h2 {
+	font-family: "Source Sans Pro";
+	font-size: 30px;
+	font-weight: 100;
+	letter-spacing: 1.5px;
+	line-height: 30px;
+	margin-bottom: 30px;
+	text-align: center; }
+.definition h2.byline {
+	font-size: 15px;
+	letter-spacing: .75px;
+	line-height: 15px;
+	text-align: right;
+}
+
+#section-1 {
+	background-color: rgb(200,100,100);
+}
+
+#section-2 {
+	background-color: rgb(100,100,200);
+}
+
+
+
+
+footer#primary-footer {
+	background-color: rgba(255,255,255,.5);
+	border-top-left-radius: 40px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 450px;
+	height: 40px;
+	z-index: 2; }
+footer#primary-footer nav ul li {
+	float: left;
+	line-height: 40px;
+	list-style: none;
+	text-align: center;
+	width: 150px;
+	height: 40px; }
+footer#primary-footer nav ul li:hover {
+	background-color: rgb(255,255,255);
+}
+
+.svg-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; }
+.svg-wrapper svg {
+	display: block;
+	margin: 100px auto 0 auto; }
+#section-2-labels {
+	color: rgb(255,255,255);
+	font-family: "Source Sans Pro";
+	font-size: 25px;
+	font-weight: 100;
+	line-height: 30px;
+	text-align: center;
+	width: 100%;
+	height: 25px; }
+#section-2-labels h2 {
+	font-weight: 100;
+}
+
+#section-3 g.slice path {
+	stroke: rgb(255,255,255);
+	stroke-width: 1px;
+}
+
+g#x-axis line {
+	stroke: rgb(0,0,0);
+	stroke-width: 1px;
+}

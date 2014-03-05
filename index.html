@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2013 Bechdel Interactive Graphic</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="js/vendor/d3.min.js"></script>
+<script type="text/javascript">
+BCDL = {};
+BCDL.sections = [];
+
+d3.json( 'data/pretty.json', function ( data ) {
+/*	
+	var minAmount = 0
+	, 	maxAmount = d3.max( data, function ( d ) { return d.amount; } )
+	,		minRating = 5
+	,		maxRating = 10
+	,		minBechdel = 0
+	, 	maxBechdel = 3;
+
+	var svg = d3
+		.select( '#svg-wrapper' )
+		.append( 'svg' )
+		.attr( 'width', 440 )
+		.attr( 'height', 440 );
+
+	var yScale = d3.scale.linear()
+		.domain( [ maxBechdel, minBechdel ] )
+		.range( [ 20, 420 ] );
+
+	var xScale = d3.scale.linear()
+		.domain( [ minAmount, maxAmount ] )
+		.range( [ 20, 420 ] );
+
+	var sizeScale = d3.scale.linear()
+		.domain( [ 0, 3 ] )
+		.range( [ 2, 12 ] );
+
+	var xAxis = d3.svg.axis()
+		.scale( xScale )
+		.orient( 'bottom' )
+	svg.append( 'g' ).attr( 'id', 'x-axis' )
+	d3.select( 'g#x-axis' )
+		.call( xAxis )
+		.attr( 'transform', 'translate(0,420)' );
+
+
+	svg.selectAll( 'circle' )
+		.data( data )
+		.enter()
+		.append( 'circle' )
+			.attr({
+				cx: function ( d ) {
+					return xScale( d.amount );
+				},
+				cy: function ( d ) {
+					return yScale( d.bechdel );
+				},
+				r: function ( d ) {
+					return sizeScale( d.bechdel );
+				}
+			});
+*/
+	var generalsection = new BCDL.sections[2]( data );
+	generalsection.on();
+});
+
+$( document ).ready( function () {
+	$('.section').height( $(window).height() );
+});
+</script>
+<script type="text/javascript" src="js/section-2.js"></script>
+
+</head>
+<body>
+	<footer id="primary-footer">
+		<nav>
+			<ul>
+				<li>
+					<a href="#colophon">colophon</a>
+				</li>
+				<li>
+					<a href="#about-me">about me</a>
+				</li>
+				<li>
+					<a href="#share">share</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+	<div id="sections">
+		<section class="section" id="section-0">
+			<header id="bechdel-definition" class="definition">
+				<h1>The Bechdel Test</h1>
+				<h2>&ldquo;I only go to a movie if it satisfies three basic requirements. One, it has to have at least two women in it who, two, talk to each other about, three, something other than a man.&rdquo;</h2>
+				<h2 class="byline">-A. Bechdel, <em>Dykes to Watch Out For</em></h2>
+			</header>
+		</section>
+
+		<section class="section" id="section-1">
+			<header id="project-definition" class="definition">
+				<h1>Hollywood, 2013</h1>
+				<h2>Inspired by <a href="">this article</a> by Versha Sharma and Hanna Sender at <em>Vocativ</em>, here is a (mostly) visual representation of how the 50 top-grossing films of 2013 did on the Bechdel Test.</h2>
+			</header>
+		</section>
+
+		<section class="section" id="section-2">
+			<h1 class="section-title">How did they fare?</h1>
+			<h2 class="section-description">the 50 top-grossing movies of 2013,<br> broken out by how they fared.</h2>
+			<div class="svg-wrapper" id="pass-wrapper">
+				<header id="section-2-labels">
+					<h1></h1>
+					<h2></h2>
+				</header>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
