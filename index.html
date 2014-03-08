@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>2013 Bechdel Interactive Graphic</title>
+<meta name="content" content="charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
 <script type="text/javascript" src="js/vendor/d3.min.js"></script>
@@ -63,6 +64,8 @@ d3.json( 'data/pretty.json', function ( data ) {
 */
 	var generalsection = new BCDL.sections[2]( data );
 	generalsection.on();
+	var indexsection = new BCDL.sections[3]( data );
+	indexsection.on();
 });
 
 $( document ).ready( function () {
@@ -70,6 +73,8 @@ $( document ).ready( function () {
 });
 </script>
 <script type="text/javascript" src="js/section-2.js"></script>
+<script type="text/javascript" src="js/section-3.js"></script>
+<script type="text/javascript" src="js/section-4.js"></script>
 
 </head>
 <body>
@@ -105,15 +110,77 @@ $( document ).ready( function () {
 		</section>
 
 		<section class="section" id="section-2">
-			<h1 class="section-title">How did they fare?</h1>
-			<h2 class="section-description">the 50 top-grossing movies of 2013,<br> broken out by how they fared.</h2>
+			<header class="section-header" id="section-2-header">
+				<h1 class="section-title">The Bechdel Index</h1>
+				<h2 class="section-description">The topline numbers of how 2013&rsquo;s top 50 films fared.<br>(NB: dubiously passing films counted as &ldquo;failing&rdquo;.)</h2> 
+			</header>
+			<div class="svg-wrapper">
+				<ul>
+					<li>
+						<div class="figure" id="passing-figure"></div>
+						<div class="explanation">percent that passed</div>
+					</li>
+					<li>
+						<div class="figure" id="total-earnings-pass-figure"></div>
+						<div class="explanation">total amount made by passing films</div>
+					</li>
+					<li>
+						<div class="figure" id="total-earnings-fail-figure"></div>
+						<div class="explanation">total amount made by failing films</div>
+					</li>
+					<li>
+						<div class="figure" id="average-earnings-pass-figure"></div>
+						<div class="explanation">average amount made by passing films</div>
+					</li>
+					<li>
+						<div class="figure" id="average-earnings-fail-figure"></div>
+						<div class="explanation">average amount made by failing films</div>
+					</li>
+					<li>
+						<div class="figure" id="average-rating-pass-figure"></div>
+						<div class="explanation">average rating of passing films on imdb</div>
+					</li>
+					<li>
+						<div class="figure" id="average-rating-figure"></div>
+						<div class="explanation">average rating of failing films on imdb</div>
+					</li>
+					<li>
+						<div class="figure" id="average-rating-figure"></div>
+						<div class="explanation">most common genre of passing films</div>
+					</li>
+					<li>
+						<div class="figure" id="average-rating-figure"></div>
+						<div class="explanation">most common genre of failing films</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<section class="section" id="section-3">
+			<header class="section-header" id="section-3-header">
+				<h1 class="section-title">How did they fare?</h1>
+				<ul>
+					<li id="pass-pie">Pie</li>
+					<li id="pass-bar">Bar</li>
+				</ul>
+			</header>
 			<div class="svg-wrapper" id="pass-wrapper">
-				<header id="section-2-labels">
+				<header id="section-3-labels">
 					<h1></h1>
 					<h2></h2>
 				</header>
 			</div>
 		</section>
+
+		<section class="section" id="section-4">
+			<header class="section-header" id="section-4-header">
+				<h1 class="section-title">How much did they make?</h1>
+			</header>
+			<div class="svg-wrapper" id="amount-wrapper">
+			</div>
+		</section>
+
 	</div>
 </body>
 </html>
