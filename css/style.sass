@@ -1,0 +1,200 @@
+// variables
+$section0color: rgb(100,200,100)
+$section1color: rgb(200,100,100)
+$section2color: rgb(100,100,200)
+$section3color: rgb(150,150,100)
+
+
+// big
+*
+  margin: 0
+  padding: 0
+html, body
+  overflow: hidden
+  width: 100%
+  height: 100%
+
+// general
+h1, h2, h3, h4, h5
+  color: rgb(255,255,255)
+  font-family: "Source Sans Pro"
+h1
+  font-weight: 800
+h2
+  font-weight: 100
+a
+  border-bottom: 1px dotted rgb(255,255,255)
+  color: inherit
+  text-decoration: none
+
+// perma-footer
+footer#primary-footer
+  background-color: rgba(255,255,255,.5)
+  border-top-left-radius: 40px
+  overflow: hidden
+  position: absolute
+  bottom: 0
+  right: 0
+  width: 450px
+  height: 40px
+  z-index: 2
+footer#primary-footer nav ul li
+  float: left
+  font-family: "Source Sans Pro"
+  line-height: 40px
+  list-style: none
+  text-align: center
+  width: 150px
+  height: 40px
+footer#primary-footer nav ul li:hover
+  background-color: rgb(255,255,255)
+
+// general sections
+#sections
+  position: relative
+  overflow-y: scroll
+  width: 100%
+  height: 100%
+  .section
+    position: relative
+
+    // definition headers
+    .definition
+      color: rgb(255,255,255)
+      margin: 0 auto
+      padding: 200px 0 0 0
+      text-align: center
+      width: 650px
+      height: 100%
+      h1
+        font-size: 60px
+        letter-spacing: 3px
+        line-height: 60px
+        margin-bottom: 30px
+        text-transform: uppercase
+      h2
+        font-size: 30px
+        font-weight: 100
+        letter-spacing: 1.5px
+        line-height: 30px
+        margin-bottom: 30px
+      h2.byline
+        font-size: 15px
+        letter-spacing: 0.75px
+        line-height: 15px
+        text-align: right
+
+    // standard header
+    header.section-header
+      margin-left: 20px
+      padding-top: 20px
+      position: relative
+      text-transform: uppercase
+      width: 700px
+      z-index: 2
+      h1.section-title
+        font-size: 30px
+        letter-spacing: 1.5px
+      h2.section-description
+        font-size: 20px
+        letter-spacing: 1px
+
+    // svg wrappers
+    .svg-wrapper
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      svg
+        display: block
+        margin: 100px auto 0 auto
+
+// specific sections
+#section-0
+  background-color: $section0color
+#section-1
+  background-color: $section1color
+#section-2
+  background-color: $section2color
+  ul
+    margin: 100px auto 0 auto
+    li
+      float: left
+      font-family: "Source Sans Pro"
+      list-style: none
+      position: relative
+      .figure
+        h1
+          font-size: 100px
+          text-align: center
+      .explanation
+        color: rgb(255,255,255)
+        font-size: 12px
+        font-weight: 100
+        letter-spacing: 0.6px
+        padding: 0 10px
+        position: absolute
+        bottom: 10px
+        text-align: left
+    li:hover
+      background-color: rgba(255,255,255,.25)
+#section-3
+  background-color: $section3color
+  li
+    color: rgb(255,255,255)
+    cursor: pointer
+    font-family: "Source Sans Pro"
+    font-weight: 100
+    list-style: none
+    width: 150px
+    height: 25px
+  #section-3-labels
+    color: rgb(255,255,255)
+    font-family: "Source Sans Pro"
+    font-size: 30px
+    font-weight: 100
+    margin-left: -200px
+    margin-top: -85px
+    position: absolute
+    top: 50%
+    left: 50%
+    text-align: center
+    width: 400px
+    height: 170px
+    h1
+      font-size: 150px
+      font-weight: 100
+      line-height: 150px
+    h2
+      font-size: 20px
+      font-weight: 400
+      line-height: 20px
+  .y-axis
+    .domain
+      fill: none
+    line
+      stroke: rgb(255,255,255)
+      stroke-width: 0.5px
+    text
+      fill: rgb(255,255,255)
+      font-family: "Source Sans Pro"
+      font-size: 12px
+  .x-axis
+    .domain
+      fill: none
+      stroke: rgb(255,255,255)
+      stroke-width: 1px
+    line
+      stroke: rgb(255,255,255)
+      stroke-width: 0.5px
+    text
+      fill: rgb(255,255,255)
+      font-family: "Source Sans Pro"
+      font-size: 12px
+  g.slice path
+    cursor: pointer
+    stroke: $section3color
+    stroke-width: 3px
+
+
