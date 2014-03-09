@@ -47,7 +47,9 @@ BCDL.sections[2] = function ( data ) {
 			}
 		];
 		for ( var i = 0; i < data.length; i++ ) {
-			betterData[data[i].bechdel].value++;
+			if ( data[i].bechdel !== "-1" ) {
+				betterData[data[i].bechdel].value++;
+			}
 		}
 		return betterData;
 	}

@@ -12,7 +12,8 @@
             "sci-fi",
             "thriller"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 89
     },
     {
         "id": "1300854",
@@ -27,7 +28,9 @@
             "fantasy",
             "sci-fi"
         ],
-        "bechdel": "3"
+        "bechdel": "3",
+        "rtRating": 78
+
     },
     {
         "id": "2294629",
@@ -44,7 +47,8 @@
             "fantasy",
             "musical"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 89
     },
     {
         "id": "1690953",
@@ -61,7 +65,8 @@
             "family",
             "sci-fi"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 75
     },
     {
         "id": "0770828",
@@ -76,7 +81,8 @@
             "fantasy",
             "sci-fi"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 56
     },
     {
         "id": "1454468",
@@ -90,7 +96,8 @@
             "sci-fi",
             "thriller"
         ],
-        "bechdel": "0"
+        "bechdel": "-1",
+        "rtRating": 97
     },
     {
         "id": "1453405",
@@ -106,7 +113,8 @@
             "family",
             "fantasy"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 79
     },
     {
         "id": "1170358",
@@ -119,7 +127,8 @@
             "adventure",
             "fantasy"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 75
     },
     {
         "id": "1905041",
@@ -133,7 +142,8 @@
             "crime",
             "thriller"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 69
     },
     {
         "id": "1623205",
@@ -147,7 +157,8 @@
             "family",
             "fantasy"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 59
     },
     {
         "id": "1408101",
@@ -161,7 +172,8 @@
             "adventure",
             "sci-fi"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 87
     },
     {
         "id": "1981115",
@@ -175,7 +187,8 @@
             "adventure",
             "fantasy"
         ],
-        "bechdel": "3"
+        "bechdel": "3",
+        "rtRating": 65
     },
     {
         "id": "0816711",
@@ -191,7 +204,8 @@
             "sci-fi",
             "thriller"
         ],
-        "bechdel": "3"
+        "bechdel": "3",
+        "rtRating": 67
     },
     {
         "id": "0481499",
@@ -207,7 +221,8 @@
             "family",
             "fantasy"
         ],
-        "bechdel": "2"
+        "bechdel": "2",
+        "rtRating": 70
     },
     {
         "id": "2404463",
@@ -221,7 +236,8 @@
             "comedy",
             "crime"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 66
     },
     {
         "id": "1723121",
@@ -234,7 +250,8 @@
             "comedy",
             "crime"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 47
     },
     {
         "id": "1800241",
@@ -247,7 +264,8 @@
             "crime",
             "drama"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 93
     },
     {
         "id": "1343092",
@@ -260,7 +278,8 @@
             "drama",
             "romance"
         ],
-        "bechdel": "3"
+        "bechdel": "3",
+        "rtRating": 49
     },
     {
         "id": "1457767",
@@ -273,7 +292,8 @@
             "horror",
             "thriller"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 86
     },
     {
         "id": "2024432",
@@ -286,7 +306,8 @@
             "comedy",
             "crime"
         ],
-        "bechdel": "2"
+        "bechdel": "2",
+        "rtRating": 19
     },
     {
         "id": "2191701",
@@ -298,7 +319,8 @@
         "genres": [
             "comedy"
         ],
-        "bechdel": "2"
+        "bechdel": "2",
+        "rtRating": 7
     },
     {
         "id": "1430132",
@@ -313,7 +335,8 @@
             "fantasy",
             "sci-fi"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 69
     },
     {
         "id": "1583421",
@@ -328,7 +351,8 @@
             "sci-fi",
             "thriller"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 28
     },
     {
         "id": "1985966",
@@ -344,7 +368,8 @@
             "fantasy",
             "sci-fi"
         ],
-        "bechdel": "0"
+        "bechdel": "0",
+        "rtRating": 69
     },
     {
         "id": "1670345",
@@ -358,7 +383,8 @@
             "mystery",
             "thriller"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 50
     },
     {
         "id": "1327773",
@@ -371,7 +397,8 @@
             "biography",
             "drama"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 73
     },
     {
         "id": "0993846",
@@ -386,7 +413,8 @@
             "crime",
             "drama"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 77
     },
     {
         "id": "1951261",
@@ -398,7 +426,8 @@
         "genres": [
             "comedy"
         ],
-        "bechdel": "2"
+        "bechdel": "2",
+        "rtRating": 19
     },
     {
         "id": "0848537",
@@ -413,7 +442,8 @@
             "family",
             "fantasy"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 64
     },
     {
         "id": "1535109",
@@ -427,7 +457,8 @@
             "drama",
             "thriller"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 93
     },
     {
         "id": "1663662",
@@ -441,7 +472,8 @@
             "adventure",
             "sci-fi"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 71
     },
     {
         "id": "1245492",
@@ -454,7 +486,8 @@
             "comedy",
             "fantasy"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 83
     },
     {
         "id": "2302755",
@@ -467,7 +500,8 @@
             "action",
             "thriller"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 48
     },
     {
         "id": "0453562",
@@ -481,7 +515,8 @@
             "drama",
             "sport"
         ],
-        "bechdel": "2"
+        "bechdel": "2",
+        "rtRating": 78
     },
     {
         "id": "1535108",
@@ -496,7 +531,8 @@
             "sci-fi",
             "thriller"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 68
     },
     {
         "id": "1691917",
@@ -511,7 +547,8 @@
             "comedy",
             "family"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 26
     },
     {
         "id": "1210819",
@@ -525,7 +562,8 @@
             "adventure",
             "western"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 30
     },
     {
         "id": "1483013",
@@ -540,7 +578,8 @@
             "mystery",
             "sci-fi"
         ],
-        "bechdel": "2"
+        "bechdel": "2",
+        "rtRating": 53
     },
     {
         "id": "2226417",
@@ -553,7 +592,8 @@
             "horror",
             "thriller"
         ],
-        "bechdel": "2"
+        "bechdel": "2",
+        "rtRating": 37
     },
     {
         "id": "1860353",
@@ -569,7 +609,8 @@
             "family",
             "sport"
         ],
-        "bechdel": "3"
+        "bechdel": "3",
+        "rtRating": 67
     },
     {
         "id": "2140373",
@@ -586,7 +627,8 @@
             "history",
             "music"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 80
     },
     {
         "id": "1272878",
@@ -602,7 +644,8 @@
             "drama",
             "thriller"
         ],
-        "bechdel": "1"
+        "bechdel": "1",
+        "rtRating": 64
     },
     {
         "id": "2334879",
@@ -616,7 +659,8 @@
             "drama",
             "thriller"
         ],
-        "bechdel": "2"
+        "bechdel": "2",
+        "rtRating": 50
     },
     {
         "id": "2023587",
@@ -629,7 +673,8 @@
             "horror",
             "thriller"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 66
     },
     {
         "id": "1702439",
@@ -644,7 +689,8 @@
             "romance",
             "thriller"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 12
     },
     {
         "id": "2017020",
@@ -659,7 +705,8 @@
             "family",
             "fantasy"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 14
     },
     {
         "id": "2083355",
@@ -672,6 +719,7 @@
             "comedy",
             "drama"
         ],
-        "bechdel": "4"
+        "bechdel": "4",
+        "rtRating": 68
     }
 ]
