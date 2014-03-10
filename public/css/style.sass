@@ -3,7 +3,7 @@ $section0color: rgb(100,200,100)
 $section1color: rgb(200,100,100)
 $section2color: rgb(100,100,200)
 $section3color: rgb(150,150,100)
-
+$section4color: rgb(100,150,150)
 
 // big
 *
@@ -17,11 +17,11 @@ html, body
 // general
 h1, h2, h3, h4, h5
   color: rgb(255,255,255)
-  font-family: "Source Sans Pro"
+  font-weight: 400
 h1
-  font-weight: 800
+  font-family: "Source Sans Pro Bold"
 h2
-  font-weight: 100
+  font-family: "Source Sans Pro ExtraLight"
 a
   border-bottom: 1px dotted rgb(255,255,255)
   color: inherit
@@ -40,7 +40,7 @@ footer#primary-footer
   z-index: 2
 footer#primary-footer nav ul li
   float: left
-  font-family: "Source Sans Pro"
+  font-family: "Source Sans Pro Regular"
   line-height: 40px
   list-style: none
   text-align: center
@@ -128,7 +128,7 @@ footer#primary-footer nav ul li:hover
           height: 150px
     li
       float: left
-      font-family: "Source Sans Pro"
+      font-family: "Source Sans Pro Regular"
       list-style: none
       position: relative
       .figure
@@ -157,16 +157,14 @@ footer#primary-footer nav ul li:hover
   li
     color: rgb(255,255,255)
     cursor: pointer
-    font-family: "Source Sans Pro"
-    font-weight: 100
+    font-family: "Source Sans Pro ExtraLight"
     list-style: none
     width: 150px
     height: 25px
   #section-3-labels
     color: rgb(255,255,255)
-    font-family: "Source Sans Pro"
+    font-family: "Source Sans Pro ExtraLight"
     font-size: 30px
-    font-weight: 100
     margin-left: -200px
     margin-top: -85px
     position: absolute
@@ -177,11 +175,11 @@ footer#primary-footer nav ul li:hover
     height: 170px
     h1
       font-size: 150px
-      font-weight: 100
+      font-family: "Source Sans Pro ExtraLight"
       line-height: 150px
     h2
       font-size: 20px
-      font-weight: 400
+      font-family: "Source Sans Pro Regular"
       line-height: 20px
   .y-axis
     .domain
@@ -191,7 +189,7 @@ footer#primary-footer nav ul li:hover
       stroke-width: 0.5px
     text
       fill: rgb(255,255,255)
-      font-family: "Source Sans Pro"
+      font-family: "Source Sans Pro Regular"
       font-size: 12px
   .x-axis
     .domain
@@ -203,11 +201,13 @@ footer#primary-footer nav ul li:hover
       stroke-width: 0.5px
     text
       fill: rgb(255,255,255)
-      font-family: "Source Sans Pro"
+      font-family: "Source Sans Pro Regular"
       font-size: 12px
   g.slice path
     cursor: pointer
     stroke: $section3color
     stroke-width: 3px
+#section-4
+  background-color: $section4color
 
 

@@ -1,4 +1,4 @@
-BCDL.sections[2] = function ( data ) {
+BCDL.sections[3] = function ( data ) {
 
 	var that = this;
 
@@ -8,58 +8,14 @@ BCDL.sections[2] = function ( data ) {
 	var height = width;
 
 
-	var fixData = function ( data ) {
-		var betterData = [
-			{
-				name: '0',
-				value: 0,
-				pass: 0,
-				label: 'Failed: there weren&rsquo;t two women',
-				barLabel: 'Not two women'
-			},
-			{
-				name: '1',
-				value: 0,
-				pass: 0,
-				label: 'They didn&rsquo;t talk',
-				barLabel: 'They did not talk'
-			},
-			{
-				name: '2',
-				value: 0,
-				pass: 0,
-				label: 'They talked only about a man',
-				barLabel: 'They talked about a man'
-			},
-			{
-				name: '3',
-				value: 0,
-				pass: 0,
-				label: 'Passed, dubiously.',
-				barLabel: 'Passed, dubiously'
-			},
-			{
-				name: '4',
-				value: 0,
-				pass: 1,
-				label: 'Passed',
-				barLabel: 'Passed'
-			}
-		];
-		for ( var i = 0; i < data.length; i++ ) {
-			if ( data[i].bechdel !== "-1" ) {
-				betterData[data[i].bechdel].value++;
-			}
-		}
-		return betterData;
-	}
+	
 
 	var createPieChart = function ( e ) {
 		$('#pass-wrapper').find( 'svg' ).remove();
 
 		var svg = d3.select( '#pass-wrapper' )
 			.append( 'svg' )
-			.data( [ fixData( data ) ] )
+			.data( [ that.data ] )
 			.attr( { "width": width, "height": height } )
 			.append( 'g' )
 			.attr( "transform", "translate(" +  ( r + offset ) + "," + ( r + offset ) + ")" );
@@ -95,14 +51,17 @@ BCDL.sections[2] = function ( data ) {
 
 		paths
 			.on( 'mouseover', function ( e ) {
-				console.log( 'mouseover' );
 				d3.select( this )
 					.transition()
 					.duration( 200 )
 					.ease( 'ease-in' )
 					.attr( 'd', overArc );
 				var datum = d3.select( this ).datum();
-				var average = Math.floor( ( datum.data.value / data.length ) * 100 );
+				var size = 0;
+				for ( var i = 0; i < that.data.length; i++ ) {
+					size += that.data[i].value;
+				}
+				var average = Math.floor( ( datum.data.value / size ) * 100 );
 				var label = datum.data.label;
 				$('#pass-wrapper').find( 'header' ).find( 'h1' ).html( average + '%' );
 				$('#pass-wrapper').find( 'header' ).find( 'h2' ).html( label );
@@ -124,7 +83,6 @@ BCDL.sections[2] = function ( data ) {
 
 		// setup.
 		$('#pass-wrapper').find( 'svg' ).remove();
-		var fixedData = fixData( data );
 
 		// create the svg element
 		var svg = d3.select( '#pass-wrapper' )
@@ -132,7 +90,7 @@ BCDL.sections[2] = function ( data ) {
 			.attr( { "width": width, "height": height } );
 
 		// get the grouped scales
-		var maxY = d3.max( fixedData, function ( d ) {
+		var maxY = d3.max( that.data, function ( d ) {
 			return d.value;
 		});
 		var xScale = d3.scale.linear()
@@ -144,7 +102,7 @@ BCDL.sections[2] = function ( data ) {
 
 		// create the rects
 		var rects = svg.selectAll( 'rect' )
-			.data( fixData( data ) )
+			.data( that.data )
 			.enter()
 			.append( 'rect' )
 			.attr( 'fill', function ( d ) {
@@ -158,15 +116,15 @@ BCDL.sections[2] = function ( data ) {
 
 		var moveToGrouped = function () {
 			var tickValues = [];
-			for ( var i = 0; i < fixedData.length; i++ ) {
-				tickValues.push( fixedData[i].label );
+			for ( var i = 0; i < that.data.length; i++ ) {
+				tickValues.push( that.data[i].label );
 			}
 			var xAxis = d3.svg.axis()
 				.scale( xScale )
 				.orient( 'bottom' )
 				.tickFormat( function ( d ) {
 					if ( d < 5 ) {
-						return fixData( data )[d].barLabel;
+						return that.data[d].barLabel;
 					} else {
 						return null;
 					}
@@ -208,8 +166,8 @@ BCDL.sections[2] = function ( data ) {
 
 		var moveToStacked = function () {
 			var passFail = [ 0, 0 ];
-			for ( var i = 0; i < fixedData.length; i++ ) {
-				passFail[fixedData[i].pass] += fixedData[i].value;
+			for ( var i = 0; i < that.data.length; i++ ) {
+				passFail[that.data[i].pass] += that.data[i].value;
 			}
 			var maxYStacked = d3.max( passFail );
 			var xScaleStacked = d3.scale.linear()
@@ -255,9 +213,12 @@ BCDL.sections[2] = function ( data ) {
 	};
 
 	this.on = function () {
-		createPieChart();
-		$('#pass-bar').on( 'click', createBarGraph );
-		$('#pass-pie').on( 'click', createPieChart );
+		d3.json( '/bechdel-2013/api/section/3', function ( data ) {
+			that.data = data;
+			createPieChart();
+			$('#pass-bar').on( 'click', createBarGraph );
+			$('#pass-pie').on( 'click', createPieChart );
+		});
 	};
 
 }

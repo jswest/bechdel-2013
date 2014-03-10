@@ -4,7 +4,7 @@ BCDL.sections[4] = function () {
 
 
   this.on = function () {
-    makePieChart();
+    //makePieChart();
   }
 
 

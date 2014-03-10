@@ -9,13 +9,13 @@ html, body {
 
 h1, h2, h3, h4, h5 {
   color: white;
-  font-family: "Source Sans Pro"; }
+  font-weight: 400; }
 
 h1 {
-  font-weight: 800; }
+  font-family: "Source Sans Pro Bold"; }
 
 h2 {
-  font-weight: 100; }
+  font-family: "Source Sans Pro ExtraLight"; }
 
 a {
   border-bottom: 1px dotted white;
@@ -35,7 +35,7 @@ footer#primary-footer {
 
 footer#primary-footer nav ul li {
   float: left;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro Regular";
   line-height: 40px;
   list-style: none;
   text-align: center;
@@ -116,7 +116,7 @@ footer#primary-footer nav ul li:hover {
       height: 150px; }
     #section-2 ul li {
       float: left;
-      font-family: "Source Sans Pro";
+      font-family: "Source Sans Pro Regular";
       list-style: none;
       position: relative; }
       #section-2 ul li .figure h1 {
@@ -145,16 +145,14 @@ footer#primary-footer nav ul li:hover {
   #section-3 li {
     color: white;
     cursor: pointer;
-    font-family: "Source Sans Pro";
-    font-weight: 100;
+    font-family: "Source Sans Pro ExtraLight";
     list-style: none;
     width: 150px;
     height: 25px; }
   #section-3 #section-3-labels {
     color: white;
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro ExtraLight";
     font-size: 30px;
-    font-weight: 100;
     margin-left: -200px;
     margin-top: -85px;
     position: absolute;
@@ -165,11 +163,11 @@ footer#primary-footer nav ul li:hover {
     height: 170px; }
     #section-3 #section-3-labels h1 {
       font-size: 150px;
-      font-weight: 100;
+      font-family: "Source Sans Pro ExtraLight";
       line-height: 150px; }
     #section-3 #section-3-labels h2 {
       font-size: 20px;
-      font-weight: 400;
+      font-family: "Source Sans Pro Regular";
       line-height: 20px; }
   #section-3 .y-axis .domain {
     fill: none; }
@@ -178,7 +176,7 @@ footer#primary-footer nav ul li:hover {
     stroke-width: 0.5px; }
   #section-3 .y-axis text {
     fill: white;
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro Regular";
     font-size: 12px; }
   #section-3 .x-axis .domain {
     fill: none;
@@ -189,9 +187,12 @@ footer#primary-footer nav ul li:hover {
     stroke-width: 0.5px; }
   #section-3 .x-axis text {
     fill: white;
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro Regular";
     font-size: 12px; }
   #section-3 g.slice path {
     cursor: pointer;
     stroke: #969664;
     stroke-width: 3px; }
+
+#section-4 {
+  background-color: #649696; }

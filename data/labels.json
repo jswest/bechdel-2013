@@ -1,0 +1,22 @@
+[
+	{
+		"label": "Failed: there weren&rsquo;t two women",
+		"barLabel": "Not two women"
+	},
+	{
+		"label": "They didn&rsquo;t talk",
+		"barLabel": "They did not talk"
+	},
+	{
+		"label": "They talked only about a man",
+		"barLabel": "They talked about a man"
+	},
+	{
+		"label": "Passed, dubiously",
+		"barLabel": "Passed, dubiously"
+	},
+	{
+		"label": "Passed",
+		"barLabel": "Passed"
+	}
+]
