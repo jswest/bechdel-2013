@@ -5,7 +5,12 @@
 		<meta name="content" content="charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="/bechdel-2013/public/css/fonts.css">
 		<link rel="stylesheet" type="text/css" href="/bechdel-2013/public/css/style.css">
-		<script type="text/javascript" src="/bechdel-2013/public/js/manifest.min.js"></script>
+		<script>
+BCDL = {};
+BCDL.sections = [];
+BCDL.initSections = [];
+		</script>
+		<script src="/bechdel-2013/public/js/manifest.min.js"></script>
 	</head>
 	<body>
 		<footer id="primary-footer">
