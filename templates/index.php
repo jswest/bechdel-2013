@@ -100,6 +100,22 @@ BCDL.initSections = [];
 				</div>
 			</section>
 
+			<section class="section" id="section-5" data-location="5" data-slug="ratings">
+				<header class="section-header" id="section-5-header">
+					<h1 class="section-title">How well were they received?</h1>
+				</header>
+				<div class="svg-wrapper" id="ratings-wrapper">
+				</div>
+			</section>
+
+			<section class="section" id="section-6" data-location="6" data-slug="genres">
+				<header class="section-header" id="section-6-header">
+					<h1 class="section-title">In which genres were they?</h1>
+				</header>
+				<div class="svg-wrapper" id="ratings-wrapper">
+				</div>
+			</section>
+
 		</div>
 	</body>
 </html>
