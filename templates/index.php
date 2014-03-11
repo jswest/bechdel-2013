@@ -95,8 +95,17 @@ BCDL.initSections = [];
 			<section class="section" id="section-4" data-location="4" data-slug="amount-made">
 				<header class="section-header" id="section-4-header">
 					<h1 class="section-title">How much did they make?</h1>
+					<h2 class="section-description">The average amount made by each segement</h2>
+					<ul>
+						<li id="amount-pie">Pie</li>
+						<li id="amount-bar">Bar</li>
+					</ul>
 				</header>
 				<div class="svg-wrapper" id="amount-wrapper">
+					<header id="section-4-labels">
+						<h1></h1>
+						<h2></h2>
+					</header>
 				</div>
 			</section>
 

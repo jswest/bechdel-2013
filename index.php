@@ -66,4 +66,32 @@ $app->get( '/api/section/3', function () use ( $app, $data, $labels ) {
 
 });
 
+$app->get( '/api/section/4', function () use ( $app, $data, $labels ) {
+	$good_data = array( array(), array(), array(), array(), array() );
+	foreach ( $data as $datum ) {
+		$name = $datum->bechdel;
+		$int_name = intval( $name );
+		if ( $name !== '-1' ) {
+			$pass = 0;
+			if ( $name === '4' ) { $pass = 1; }
+			$label = $labels[$int_name]->label;
+			$bar_label = $labels[$int_name]->barLabel;
+			if ( isset( $good_data[$int_name]['value'] ) ) {
+				$good_data[$int_name]['value']++;
+				$good_data[$int_name]['amountMade'] += $datum->amount;
+			}
+			else {
+				$good_data[$int_name]['name'] = $name;
+				$good_data[$int_name]['value'] = 1;
+				$good_data[$int_name]['pass'] = $pass;
+				$good_data[$int_name]['label'] = $label;
+				$good_data[$int_name]['barLabel'] = $bar_label;
+				$good_data[$int_name]['amountMade'] = $datum->amount;
+			}
+		}
+	}
+	$app->response()->header( 'Content-Type', 'application/json' );
+	echo json_encode( $good_data );
+});
+
 $app->run();

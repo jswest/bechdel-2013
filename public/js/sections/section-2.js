@@ -27,7 +27,7 @@ BCDL.sections[2] = function () {
       size += that.data[i].value;
     }
     var passPercent = Math.floor( ( that.data[4].value / size ) * 100 );
-    $('#passing-figure').append( '<h1>' + passPercent + '%</h1>' );
+    $('#passing-figure').html( '<h1>' + passPercent + '%</h1>' );
   };
   var amountAverage = function () {
     var passAverage = Math.round( that.data[4].amountMade / that.data[4].value );
@@ -40,8 +40,8 @@ BCDL.sections[2] = function () {
       }
     }
     var failAverage = Math.round( failAmount / failValue );
-    $('#average-earnings-pass-figure').append( '<h1>$' + passAverage + 'M</h1>' );
-    $('#average-earnings-fail-figure').append( '<h1>$' + failAverage + 'M</h1>' );
+    $('#average-earnings-pass-figure').html( '<h1>$' + passAverage + 'M</h1>' );
+    $('#average-earnings-fail-figure').html( '<h1>$' + failAverage + 'M</h1>' );
   };
   var ratingAverage = function () {
     var passAverage = Math.round( ( that.data[4].rtRating / that.data[4].value ) );
@@ -54,8 +54,8 @@ BCDL.sections[2] = function () {
       }
     }
     var failAverage = Math.round( ( failRating / failValue ) );
-    $('#average-rating-pass-figure').append( '<h1>' + passAverage + '%</h1>' );
-    $('#average-rating-fail-figure').append( '<h1>' + failAverage + '%</h1>' );
+    $('#average-rating-pass-figure').html( '<h1>' + passAverage + '%</h1>' );
+    $('#average-rating-fail-figure').html( '<h1>' + failAverage + '%</h1>' );
   };
 
   this.on = function () {
