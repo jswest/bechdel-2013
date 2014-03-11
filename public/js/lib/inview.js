@@ -47,6 +47,7 @@ BCDL.scrollHandler = function ( e ) {
 $(document).ready( function () {
   $('.section').on( 'inview', BCDL.inviewHandler );
   $('.section').on( 'outview', BCDL.outviewHandler );
-  BCDL.debouncedScrollHandler = _.debounce( BCDL.scrollHandler, 200 );
-  $('#sections').on( 'scroll', BCDL.debouncedScrollHandler );
+  //BCDL.debouncedScrollHandler = _.debounce( BCDL.scrollHandler, 10 );
+  //$('#sections').on( 'scroll', BCDL.debouncedScrollHandler );
+  var timer = setInterval( BCDL.scrollHandler, 50 );
 });
