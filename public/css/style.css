@@ -189,6 +189,8 @@ footer#primary-footer nav ul li:hover {
     fill: white;
     font-family: "Source Sans Pro Regular";
     font-size: 12px; }
+  #section-3 rect {
+    cursor: pointer; }
   #section-3 g.slice path {
     cursor: pointer;
     stroke: #969664;

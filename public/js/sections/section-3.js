@@ -195,17 +195,36 @@ BCDL.sections[3] = function ( data ) {
 				.attr( 'transform', 'translate(' + xScaleStacked( .5 ) + ',0)' )
 			var yIndex = [ 0, 0 ];		
 			rects
-				.attr( 'width', xScaleStacked( 1 ) - offset )
+				.attr( 'width', xScaleStacked( 1 ) - ( offset * 2 ) )
 				.attr( 'height', function ( d ) {
 					return Math.abs( (height - (offset * 4)) - yScaleStacked( d.value ) );
 				})
 				.attr( 'x', function ( d ) {
-					return xScaleStacked( d.pass ) + (offset / 2);
+					return xScaleStacked( d.pass ) + ( offset );
 				})
 				.attr( 'y', function ( d ) {
 					yIndex[d.pass] += d.value;
 					return yScaleStacked( yIndex[d.pass] );
 				})
+			rects
+				.on( 'mouseover', function ( e ) {
+					d3.select( this )
+						.transition()
+						.duration( 200 )
+						.attr( 'width', xScaleStacked( 1 ) )
+						.attr( 'x', function ( d ) {
+							return xScaleStacked( d.pass );
+						});
+				})
+				.on( 'mouseout', function ( e ) {
+					d3.select( this )
+						.transition()
+						.duration( 200 )
+						.attr( 'width', xScaleStacked( 1 ) - ( offset * 2 ) )
+						.attr( 'x', function ( d ) {
+							return xScaleStacked( d.pass ) + ( offset );
+						});
+				});
 		};
 
 		moveToStacked();
