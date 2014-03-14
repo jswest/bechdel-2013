@@ -79,7 +79,7 @@ BCDL.sections[3] = function ( data ) {
 	};
 
 
-	createBarGraph = function ( e ) {
+	var createBarGraph = function ( e ) {
 
 		// setup.
 		$('#pass-wrapper').find( 'svg' ).remove();

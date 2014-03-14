@@ -71,7 +71,7 @@ BCDL.sections[4] = function () {
 	
 	};
 
-	createBarGraph = function ( e ) {
+	var createBarGraph = function ( e ) {
 
 		// setup.
 		$('#amount-wrapper').find( 'svg' ).remove();
