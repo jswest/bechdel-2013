@@ -11,10 +11,10 @@ BCDL.sections = [];
 BCDL.initSections = [];
 		</script>
 		<!--<script src="/bechdel-2013/public/js/manifest.min.js"></script>-->
-		<script src="/bechdel-2013/public/js/vender/jquery.min.js"></script>
-		<script src="/bechdel-2013/public/js/vender/d3.min.js"></script>
-		<script src="/bechdel-2013/public/js/vender/underscore.min.js"></script>
-		<script src="/bechdel-2013/public/js/vender/backbone.js"></script>
+		<script src="/bechdel-2013/public/js/vendor/jquery.min.js"></script>
+		<script src="/bechdel-2013/public/js/vendor/d3.min.js"></script>
+		<script src="/bechdel-2013/public/js/vendor/underscore.min.js"></script>
+		<script src="/bechdel-2013/public/js/vendor/backbone.js"></script>
 		<script src="/bechdel-2013/public/js/lib/inview.js"></script>
 		<script src="/bechdel-2013/public/js/sections/section-0.js"></script>
 		<script src="/bechdel-2013/public/js/sections/section-1.js"></script>
