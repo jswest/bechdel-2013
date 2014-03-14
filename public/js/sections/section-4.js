@@ -160,12 +160,15 @@ BCDL.sections[4] = function () {
 
 
   this.on = function () {
-    d3.json( '/bechdel-2013/api/section/4', function ( data ) {
-    	that.data = data;
-    	createPieChart();
- 			$('#amount-bar').on( 'click', createBarGraph );
-			$('#amount-pie').on( 'click', createPieChart );
-    });
+  	if ( !this.hasBeenCalled ) {
+	    d3.json( '/bechdel-2013/api/section/4', function ( data ) {
+	    	that.data = data;
+	    	createPieChart();
+	 			$('#amount-bar').on( 'click', createBarGraph );
+				$('#amount-pie').on( 'click', createPieChart );
+	    });  		
+  	}
+  	this.hasBeenCalled = true;
   }
 
 

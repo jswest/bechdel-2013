@@ -29,7 +29,7 @@ BCDL.initSections = [];
 			</nav>
 		</footer>
 		<div id="sections">
-			<section class="section" id="section-0" data-location="0" data-slug="title">
+			<section class="section" id="section-0" data-location="0" data-slug="title" data-loaded="false">
 				<header id="bechdel-definition" class="definition">
 					<h1>The Bechdel Test</h1>
 					<h2>&ldquo;I only go to a movie if it satisfies three basic requirements. One, it has to have at least two women in it who, two, talk to each other about, three, something other than a man.&rdquo;</h2>
@@ -37,14 +37,14 @@ BCDL.initSections = [];
 				</header>
 			</section>
 
-			<section class="section" id="section-1" data-location="1" data-slug="introduction">
+			<section class="section" id="section-1" data-location="1" data-slug="introduction" data-loaded="false">
 				<header id="project-definition" class="definition">
 					<h1>How Hollywood fared in 2013</h1>
 					<h2>An exploration the 50 top-grossing films of 2013 and the Bechdel Test, inspired by <a href="">this article</a> by Versha Sharma and Hanna Sender at <em>Vocativ</em>.</h2>
 				</header>
 			</section>
 
-			<section class="section" id="section-2" data-location="2" data-slug="the-bechdel-index">
+			<section class="section" id="section-2" data-location="2" data-slug="the-bechdel-index" data-loaded="false">
 				<header class="section-header" id="section-2-header">
 					<h1 class="section-title">The Bechdel Index</h1>
 					<h2 class="section-description">The topline numbers of how 2013&rsquo;s top 50 films fared.<br>(NB: dubiously passing films counted as &ldquo;failing&rdquo;.)</h2> 
@@ -76,7 +76,7 @@ BCDL.initSections = [];
 			</section>
 
 
-			<section class="section" id="section-3" data-location="3" data-slug="pass-fail">
+			<section class="section" id="section-3" data-location="3" data-slug="pass-fail" data-loaded="false">
 				<header class="section-header" id="section-3-header">
 					<h1 class="section-title">How did they fare?</h1>
 					<ul>
@@ -92,7 +92,7 @@ BCDL.initSections = [];
 				</div>
 			</section>
 
-			<section class="section" id="section-4" data-location="4" data-slug="amount-made">
+			<section class="section" id="section-4" data-location="4" data-slug="amount-made" data-loaded="false">
 				<header class="section-header" id="section-4-header">
 					<h1 class="section-title">How much did they make?</h1>
 					<h2 class="section-description">The average amount made by each segement</h2>
@@ -109,7 +109,7 @@ BCDL.initSections = [];
 				</div>
 			</section>
 
-			<section class="section" id="section-5" data-location="5" data-slug="ratings">
+			<section class="section" id="section-5" data-location="5" data-slug="ratings" data-loaded="false">
 				<header class="section-header" id="section-5-header">
 					<h1 class="section-title">How well were they received?</h1>
 				</header>
@@ -117,7 +117,7 @@ BCDL.initSections = [];
 				</div>
 			</section>
 
-			<section class="section" id="section-6" data-location="6" data-slug="genres">
+			<section class="section" id="section-6" data-location="6" data-slug="genres" data-loaded="false">
 				<header class="section-header" id="section-6-header">
 					<h1 class="section-title">In which genres were they?</h1>
 				</header>

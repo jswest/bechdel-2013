@@ -23,6 +23,8 @@ module.exports = function ( grunt ) {
 						'public/js/sections/section-2.js',
 						'public/js/sections/section-3.js',
 						'public/js/sections/section-4.js',
+						'public/js/sections/section-5.js',
+						'public/js/sections/section-6.js',
 						// the rest
 						'public/js/router.js',
 						'public/js/app.js'

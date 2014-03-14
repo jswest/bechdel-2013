@@ -6,7 +6,6 @@ BCDL.inviewHandler = function ( e ) {
   for ( var i = 0; i < BCDL.location; i++ ) {
     if ( !$('.section').eq( i ).data( 'loaded' ) ) {
       BCDL.initSections[i].on();
-      $('.section').eq( i ).data( 'loaded', true );
     }
   }
   BCDL.initSections[BCDL.location].on();
