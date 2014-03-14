@@ -59,13 +59,17 @@ BCDL.sections[2] = function () {
   };
 
   this.on = function () {
-    d3.json( '/bechdel-2013/api/section/2', function ( data ) {
-      that.data = data;
-      setupGrid();
-      passTotal();
-      amountAverage();
-      ratingAverage();
-    });
+    if ( !this.hasBeenCalled ) {
+      this.hasBeenCalled = true;
+      d3.json( '/bechdel-2013/api/section/2', function ( data ) {
+        that.data = data;
+        setupGrid();
+        passTotal();
+        amountAverage();
+        ratingAverage();
+      });      
+    }
+  
   }
 
 }

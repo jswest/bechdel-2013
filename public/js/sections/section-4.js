@@ -161,6 +161,7 @@ BCDL.sections[4] = function () {
 
   this.on = function () {
   	if ( !this.hasBeenCalled ) {
+  		this.hasBeenCalled = true;
 	    d3.json( '/bechdel-2013/api/section/4', function ( data ) {
 	    	that.data = data;
 	    	createPieChart();
@@ -168,7 +169,6 @@ BCDL.sections[4] = function () {
 				$('#amount-pie').on( 'click', createPieChart );
 	    });  		
   	}
-  	this.hasBeenCalled = true;
   }
 
 

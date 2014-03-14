@@ -1,7 +1,7 @@
 {
   "name": "bechdel-2013",
   "description": "an interactive data visualization of 2013's top-grossing films and the Bechdel test.",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "devDependencies": {
     "grunt": "~0.4.2",
