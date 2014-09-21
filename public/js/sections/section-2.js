@@ -61,7 +61,7 @@ BCDL.sections[2] = function () {
   this.on = function () {
     if ( !this.hasBeenCalled ) {
       this.hasBeenCalled = true;
-      d3.json( '/bechdel-2013/api/section/2', function ( data ) {
+      d3.json( '/api/section/2', function ( data ) {
         that.data = data;
         setupGrid();
         passTotal();

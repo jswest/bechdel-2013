@@ -6,6 +6,6 @@ $( document ).ready( function () {
 	BCDL.router = new BCDL.Router();
 	Backbone.history.start({
 		pushState: true,
-		root: '/bechdel-2013/'
+		root: '/'
 	});
 });

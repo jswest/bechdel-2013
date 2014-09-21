@@ -3,28 +3,28 @@
 	<head>
 		<title>2013 Bechdel Interactive Graphic</title>
 		<meta name="content" content="charset=utf-8" />
-		<link rel="stylesheet" type="text/css" href="/bechdel-2013/public/css/fonts.css">
-		<link rel="stylesheet" type="text/css" href="/bechdel-2013/public/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/style.css">
 		<script>
 BCDL = {};
 BCDL.sections = [];
 BCDL.initSections = [];
 		</script>
 		<!--<script src="/bechdel-2013/public/js/manifest.min.js"></script>-->
-		<script src="/bechdel-2013/public/js/vendor/jquery.min.js"></script>
-		<script src="/bechdel-2013/public/js/vendor/d3.min.js"></script>
-		<script src="/bechdel-2013/public/js/vendor/underscore.min.js"></script>
-		<script src="/bechdel-2013/public/js/vendor/backbone.js"></script>
-		<script src="/bechdel-2013/public/js/lib/inview.js"></script>
-		<script src="/bechdel-2013/public/js/sections/section-0.js"></script>
-		<script src="/bechdel-2013/public/js/sections/section-1.js"></script>
-		<script src="/bechdel-2013/public/js/sections/section-2.js"></script>
-		<script src="/bechdel-2013/public/js/sections/section-3.js"></script>
-		<script src="/bechdel-2013/public/js/sections/section-4.js"></script>
-		<script src="/bechdel-2013/public/js/sections/section-5.js"></script>
-		<script src="/bechdel-2013/public/js/sections/section-6.js"></script>
-		<script src="/bechdel-2013/public/js/app.js"></script>
-		<script src="/bechdel-2013/public/js/router.js"></script>
+		<script src="/public/js/vendor/jquery.min.js"></script>
+		<script src="/public/js/vendor/d3.min.js"></script>
+		<script src="/public/js/vendor/underscore.min.js"></script>
+		<script src="/public/js/vendor/backbone.js"></script>
+		<script src="/public/js/lib/inview.js"></script>
+		<script src="/public/js/sections/section-0.js"></script>
+		<script src="/public/js/sections/section-1.js"></script>
+		<script src="/public/js/sections/section-2.js"></script>
+		<script src="/public/js/sections/section-3.js"></script>
+		<script src="/public/js/sections/section-4.js"></script>
+		<script src="/public/js/sections/section-5.js"></script>
+		<script src="/public/js/sections/section-6.js"></script>
+		<script src="/public/js/app.js"></script>
+		<script src="/public/js/router.js"></script>
 	</head>
 	<body>
 		<footer id="primary-footer">

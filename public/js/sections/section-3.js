@@ -234,7 +234,7 @@ BCDL.sections[3] = function ( data ) {
 	this.on = function () {
 		if ( !this.hasBeenCalled ) {
 			this.hasBeenCalled = true;
-			d3.json( '/bechdel-2013/api/section/3', function ( data ) {
+			d3.json( '/api/section/3', function ( data ) {
 				that.data = data;
 				createPieChart();
 				$('#pass-bar').on( 'click', createBarGraph );
